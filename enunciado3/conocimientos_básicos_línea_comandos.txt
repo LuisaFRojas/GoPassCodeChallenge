@@ -1,0 +1,30 @@
+Enunciado:
+        1. Responde brevemente cómo realizarías las siguientes acciones (no es necesario ejecutarlas):
+        - Ver los 5 procesos que más memoria consumen.
+        - Agregar un nuevo usuario al sistema.
+        - Cambiar los permisos de un archivo para que solo el dueño pueda leer y escribir.
+        - Ver el estado del servicio `ssh`.
+        =====SOLUCION=====
+        1. 5 procesos que más memoria consumen:
+        ps aux | sort -k6,6 -rn
+
+        2. Agregar un nuevo usuario al sistema:
+        #Si se ejecuta desde un usuario sin privilegios:
+        sudo adduser <nombreDelNuevoUsuario>
+#Si se ejecuta desde un usuaria con privilegios:
+        adduser <nombreDelNuevoUsuario>
+
+3. Cambiar los permisos de un archivo:
+        chmod 600 <NombreDelArchivo>
+
+4.Ver el estado del servicio ssh:
+        systemctl status ssh
+
+==============SCRIPT=================
+2. Simula o escribe un script que:
+- Cree un archivo comprimido de respaldo (formato `.tar.gz`) del directorio `/home/usuario1`.
+- El archivo debe guardarse como `/backups/usuario1_backup_<fecha>.tar.gz`.
+(No es necesario que el directorio exista, puedes usar rutas ficticias en el script.)
+
+=====SOLUCION=====
+El script existe en: enunciado3/backupScript.sh
