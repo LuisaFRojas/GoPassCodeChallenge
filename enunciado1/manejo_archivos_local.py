@@ -1,4 +1,3 @@
-
 """
 Objetivo: Automatizar tareas básicas de manejo de archivos localmente.
 Enunciado:
