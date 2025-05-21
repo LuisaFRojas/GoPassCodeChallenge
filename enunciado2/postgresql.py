@@ -1,5 +1,4 @@
 """
-
 Base de datos PostgreSQL
 Objetivo: Consultar e insertar datos en una base de datos PostgreSQL.
 Enunciado:
